@@ -367,7 +367,7 @@ export default function Dashboard() {
         .dashboard-card:hover {
           // transform: translateY(-4px);
           box-shadow: 0 5px 20px rgba(83, 77, 149, 0.21);
-          // border-color: rgba(255, 107, 53, 0.4);
+          // border-color: rgb(62, 9, 154);
         }
 
         .card-header {

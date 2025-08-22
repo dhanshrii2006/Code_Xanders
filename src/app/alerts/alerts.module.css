@@ -2,20 +2,21 @@
   padding: 2rem;
   max-width: 1400px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+  /* background: rgba(22, 36, 71, 0.4); */
   min-height: 100vh;
   color: #fff;
+  border-radius: 15px;
 }
 
 .header {
   text-align: center;
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 2px solid rgba(255, 107, 53, 0.3);
+  border-bottom: 2px solid rgb(62, 9, 154)
 }
 
 .header h1 {
-  color: #ff6b35;
+  color: white;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
@@ -32,26 +33,25 @@
 .statusGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.2rem;
   margin-bottom: 3rem;
 }
 
 .statusCard {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(22, 36, 71, 0.6);
   border-radius: 15px;
-  padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.2rem;
+  border: 1px solid rgb(62, 9, 154);
   backdrop-filter: blur(10px);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .statusCard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.1);
+  box-shadow: 0 12px 20px rgba(62, 9, 154, 0.353);
 }
 
 .statusCard h3 {
-  color: #ff6b35;
+  color: white;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
