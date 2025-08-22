@@ -3,9 +3,9 @@
 import "./solar.css"
 import { useState, useEffect } from 'react'
 // import Sidebar from '../../components/Sidebar'
-import TimeSeriesChart from '../../DataVisualization/TimeSeriesChart'
-import ParticleFluxChart from '../../DataVisualization/ParticleFluxChart'
-import CMETracker from '../../DataVisualization/CMETracker'
+import TimeSeriesChart from '../components/DataVisualization/TimeSeriesChart'
+import ParticleFluxChart from '../components/DataVisualization/ParticleFluxChart'
+import CMETracker from '../components/DataVisualization/CMETracker'
 
 export default function SolarDataPage() {
   const [solarData, setSolarData] = useState(null)
