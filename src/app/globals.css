@@ -47,7 +47,7 @@ body {
     rgba(31, 64, 104, 0.95) 100%
   );
   backdrop-filter: blur(20px);
-  border-right: 2px solid rgba(255, 107, 53, 0.2);
+  border-right: 2px solid rgb(62, 9, 154,0.3);
   box-shadow: 
     0 0 50px rgba(255, 107, 53, 0.1),
     inset 0 0 50px rgba(255, 179, 71, 0.05);
@@ -87,16 +87,16 @@ body {
 
 .sidebar-header {
   padding: 24px 20px;
-  border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+  border-bottom: 1px solid rgb(62, 9, 154, 0.7);
   background: rgba(11, 20, 38, 0.6);
   position: relative;
   z-index: 2;
 }
 
 .sidebar-header h1 {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 700;
-  color: var(--solar-secondary);
+  color: white;
   margin-bottom: 20px;
   text-shadow: 0 0 20px rgba(255, 179, 71, 0.5);
   animation: solar-glow 3s ease-in-out infinite alternate;
@@ -271,7 +271,6 @@ body {
 .nav-link:hover {
   color: var(--solar-secondary);
   background: rgba(255, 107, 53, 0.1);
-  transform: translateX(8px);
   box-shadow: 0 4px 20px rgba(255, 107, 53, 0.2);
 }
 

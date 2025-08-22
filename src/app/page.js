@@ -287,7 +287,7 @@ export default function Dashboard() {
           margin-bottom: 32px;
           padding: 24px;
           background: rgba(22, 36, 71, 0.4);
-          border: 1px solid rgba(255, 107, 53, 0.2);
+          border: 1px solid rgb(62, 9, 154);
           border-radius: 16px;
           backdrop-filter: blur(10px);
         }
@@ -295,7 +295,7 @@ export default function Dashboard() {
         .dashboard-title {
           font-size: 28px;
           font-weight: 700;
-          color: var(--solar-secondary);
+          color: white;
           margin-bottom: 8px;
           text-shadow: 0 0 20px rgba(255, 179, 71, 0.3);
         }
@@ -340,7 +340,7 @@ export default function Dashboard() {
         /* Dashboard Cards */
         .dashboard-card {
           background: rgba(22, 36, 71, 0.6);
-          border: 1px solid rgba(255, 107, 53, 0.2);
+          border: 1px solid rgb(62, 9, 154);
           border-radius: 16px;
           padding: 24px;
           backdrop-filter: blur(10px);
@@ -356,18 +356,18 @@ export default function Dashboard() {
           left: 0;
           right: 0;
           height: 2px;
-          background: linear-gradient(90deg, 
-            var(--solar-primary), 
-            var(--solar-secondary), 
-            var(--solar-primary)
-          );
+          // background: linear-gradient(90deg, 
+          //   var(--solar-primary), 
+          //   var(--solar-secondary), 
+          //   var(--solar-primary)
+          // );
           opacity: 0.6;
         }
 
         .dashboard-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 12px 40px rgba(255, 107, 53, 0.2);
-          border-color: rgba(255, 107, 53, 0.4);
+          // transform: translateY(-4px);
+          box-shadow: 0 5px 20px rgba(83, 77, 149, 0.21);
+          // border-color: rgba(255, 107, 53, 0.4);
         }
 
         .card-header {
