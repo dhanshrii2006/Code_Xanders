@@ -1,0 +1,423 @@
+/* styles/Dashboard.module.css */
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+  color: white;
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.statusInfo {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.alertBanner {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alertContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.alertTitle {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.alertDescription {
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.alertLevel {
+  text-align: right;
+}
+
+.alertLevelLabel {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.alertLevelValue {
+  font-weight: bold;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.secondaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid,
+  .secondaryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #1f2937;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cardIcon {
+  margin-right: 8px;
+  color: #60a5fa;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.chartContainer {
+  height: 320px;
+  margin-bottom: 16px;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .metricsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.metricCard {
+  background: #374151;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.metricValue {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+
+.metricLabel {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.forecastContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.impactProbability {
+  background: #374151;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.probabilityValue {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fb923c;
+  margin-bottom: 4px;
+}
+
+.probabilityLabel {
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.forecastDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailLabel {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.detailValue {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.riskSection {
+  margin-top: 16px;
+}
+
+.riskTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.riskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.riskLabel {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.riskIcon {
+  margin-right: 8px;
+  color: #9ca3af;
+}
+
+.riskValue {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.eventsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.eventCard {
+  background: #374151;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid;
+}
+
+.eventHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.eventTitle {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.eventTime {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.intensityBadge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.eventDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  font-size: 0.875rem;
+}
+
+.eventDetailLabel {
+  color: #9ca3af;
+}
+
+.eventDetailValue {
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.anomalyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.anomalyCard {
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid;
+}
+
+.redAnomaly {
+  background-color: rgba(127, 29, 29, 0.3);
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+.yellowAnomaly {
+  background-color: rgba(113, 63, 18, 0.3);
+  border-color: rgba(234, 179, 8, 0.5);
+}
+
+.greenAnomaly {
+  background-color: rgba(20, 83, 45, 0.3);
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.anomalyHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.anomalyIndicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.redAnomaly .anomalyIndicator {
+  background-color: #ef4444;
+}
+
+.yellowAnomaly .anomalyIndicator {
+  background-color: #eab308;
+}
+
+.greenAnomaly .anomalyIndicator {
+  background-color: #22c55e;
+}
+
+.anomalyTitle {
+  font-weight: 600;
+}
+
+.anomalyDescription {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  margin-bottom: 8px;
+}
+
+.anomalyConfidence {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.systemStatus {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #4b5563;
+}
+
+.statusTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.statusGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  font-size: 0.875rem;
+}
+
+.statusItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statusLabel {
+  color: #9ca3af;
+}
+
+.statusValue {
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  border-top: 1px solid #374151;
+  padding-top: 24px;
+}
+
+.footerHighlight {
+  color: #60a5fa;
+}
+
+.footerSecondary {
+  margin-top: 4px;
+}
+
+/* Color utility classes */
+.textBlue { color: #60a5fa; }
+.textYellow { color: #facc15; }
+.textGreen { color: #4ade80; }
+.textRed { color: #f87171; }
+.textPurple { color: #c084fc; }
+.textCyan { color: #22d3ee; }
+.textOrange { color: #fb923c; }
+
+/* Animation */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
