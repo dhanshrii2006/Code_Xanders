@@ -38,14 +38,14 @@ export default function RootLayout({ children }) {
 
               <div className="mission-clock" id="missionClock">
                 <div className="clock-label">Mission Time</div>
-                <div className="clock-time">00:00:00 UTC</div>
+                <div className="clock-time">01:350:00:00:00 UTC</div>
               </div>
             </div>
 
             <nav className="sidebar-nav">
               <div className="nav-section">
                 <div className="nav-title">Monitoring</div>
-                <a href="/" className="nav-link active">
+                <a href="/" className="nav-link">
                   <span className="nav-icon"></span>
                   <span className="nav-text">Dashboard</span>
                   <span className="nav-status live"></span>
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
                 <a href="/detection" className="nav-link">
                   <span className="nav-icon"></span>
                   <span className="nav-text">CME Detection</span>
-                  <span className="nav-badge" id="cmeAlerts">3</span>
+                  {/* <span className="nav-badge" id="cmeAlerts"></span> */}
                 </a>
                 <a href="/alerts" className="nav-link">
                   <span className="nav-icon"></span>
